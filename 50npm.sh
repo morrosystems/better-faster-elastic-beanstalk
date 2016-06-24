@@ -33,6 +33,7 @@ fi
 #install other global stuff
 type -P phantomjs  && echo "... found, skipping install"  || {
 npm install -g --production phantomjs@">=1.9.6 <2.0.0" --user 'root'
+npm install -g --production gulp --user 'root'
 #npm install -g --production casperjs --user 'root'
 }
 type -P r.js  && echo "... found, skipping install"   || npm install -g --production requirejs@">=2.1.11 <3.0.0" --user 'root'
